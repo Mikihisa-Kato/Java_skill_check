@@ -1,8 +1,8 @@
 package chapter2;
+
 /**
  * コンソールに”Hello World!”を表示するプログラムを作成。
  */
-
 public class Operator2_1 {
 	/**
 	 * mainメソッド
