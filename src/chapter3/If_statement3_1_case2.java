@@ -25,8 +25,10 @@ public class If_statement3_1_case2 {
 		String str = br.readLine();
 		
 		int score = Integer.parseInt(str);
-
-		if (score >= 80) {
+		
+		if (score < 0 || score > 100) {
+			System.out.println("エラー: 点数は0~100の間で入力してください。");
+		} else if (score >= 80) {
 			System.out.println("たいへんよくできました。");
 		} else if (score >= 60 && score < 80) {
 			System.out.println("よくできました。");

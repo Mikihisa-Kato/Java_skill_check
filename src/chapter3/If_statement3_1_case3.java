@@ -27,7 +27,9 @@ public class If_statement3_1_case3 {
 		
 		int score = Integer.parseInt(str);
 
-		if (score >= 80) {
+		if (score < 0 || score > 100) {
+			System.out.println("点数は0~100の間で入力してください。");
+		} else if (score >= 80) {
 			System.out.println("優");
 		} else if (score >= 70  && score < 80) {
 			System.out.println("良");
