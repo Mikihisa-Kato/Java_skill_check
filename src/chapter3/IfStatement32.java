@@ -8,7 +8,7 @@ import java.io.*;
  * x と y は等しく、かつ、負の数である。
  * x は y より小さい、または、x は偶数である。  
  */
-public class If_statement3_2 {
+public class IfStatement32 {
 
 	/**
 	 * mainメソッド

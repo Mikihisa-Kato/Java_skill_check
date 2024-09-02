@@ -10,7 +10,7 @@ import java.io.*;
  * 60 点以上、80 点未満：「よくできました。」
  * 60 点未満：「ざんねんでした。」
  */
-public class If_statement3_1_case2 {
+public class IfStatement31Case2 {
 
 	/**
 	 * mainメソッド

@@ -9,7 +9,7 @@ import java.io.*;
  * 60 点以上：「合格」
  * 60 点未満：「不合格」
  */
-public class If_statement3_1_case1 {
+public class IfStatement31Case1 {
 
 	/**
 	 * mainメソッド

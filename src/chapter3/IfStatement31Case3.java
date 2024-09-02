@@ -11,7 +11,7 @@ import java.io.*;
  * 60 点以上、70 点未満：「可」
  * 60 点未満：「不可」
  */
-public class If_statement3_1_case3 {
+public class IfStatement31Case3 {
 
 	/**
 	 * mainメソッド
