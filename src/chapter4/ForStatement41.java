@@ -19,11 +19,11 @@ public class ForStatement41 {
 	 * @param args　使用しない。
 	 */
 	public static void main(String[] args) {
-		String [][] lists= {
-				{"中村", "5000", "2000"},
-				{"田島", "3000", ""},
-				{"小澤", "4500", ""},
-				{"大西", "6000", "3500"}
+		String [][] lists = {
+			{"中村", "5000", "2000"},
+			{"田島", "3000", ""},
+			{"小澤", "4500", ""},
+			{"大西", "6000", "3500"}
 		};
 		
 		int unpaid = 0;
