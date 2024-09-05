@@ -6,9 +6,57 @@ import java.io.*;
  * Calcurateクラス。演算子と計算値のフィールドを持つ。
  */
 class Calculate {
-	double x;
-	double y;
-	char operator;
+	private double x;
+	private double y;
+	private char operator;
+	
+	/**
+	 * xの値を設定する
+	 * @param x double型
+	 */
+	public void setX(double x) {
+		this.x = x;
+	}
+	
+	/**
+	 * xの値を取得する
+	 * @return xの値
+	 */
+	public double getX() {
+		return x;
+	}
+
+	/**
+	 * yの値を設定する
+	 * @param y double型
+	 */
+	public void setY(double y) {
+		this.y = y;
+	}
+	
+	/**
+	 * yの値を取得する
+	 * @return yの値
+	 */
+	public double getY() {
+		return y;
+	}
+	
+	/**
+	 * 演算子を設定する
+	 * @param operator char型
+	 */
+	public void setOperator(char operator) {
+		this.operator = operator;
+	}
+	
+	/**
+	 * 演算子を取得する
+	 * @return operator
+	 */
+	public char getOperator() {
+		return operator;
+	}
 	
 	/**
 	 * クラスメソッド。
@@ -17,7 +65,7 @@ class Calculate {
 	 * @param y double型
 	 * @param operator char型
 	 */
-	void calculation(double x, double y, char operator) {
+	void calculation() {
 		if (operator == '+') {
 			System.out.println("計算結果:" + (x + y));
 		} else if (operator == '-') {
@@ -49,7 +97,7 @@ public class BassClass52 {
 	 * @param args　使用しない。
 	 * @throws IOException　ユーザーからの入力を読み込む際に、入出力例外が発生する可能性がある。
 	 */
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		System.out.println("1つ目の数値を入力してください。");
@@ -60,7 +108,10 @@ public class BassClass52 {
 		char operator = br.readLine().charAt(0);
 		
 		Calculate calc = new Calculate();
+		calc.setX(x);
+		calc.setY(y);
+		calc.setOperator(operator);
 
-		calc.calculation(x, y, operator);
+		calc.calculation();
 	}
 }

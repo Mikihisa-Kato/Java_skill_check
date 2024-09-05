@@ -5,17 +5,47 @@ import java.io.*;
 /**
  * Productクラス。商品名と金額、税率をフィールドにもつ。
  */
-class Product
-{
-	String name;
-	int price;
-	double tax = 0.1;
+class Product {
+	private String name;
+	private int price;
+	private double tax = 0.1;
 	
+	/**
+	 * 商品名を設定する。
+	 * @param name 商品名
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	/**
+	 * 商品名を取得する。
+	 * @return　商品名
+	 */
+	public String getName() {
+		return name;
+	}
+	
+	/**
+	 * 金額を設定する。
+	 * @param price　金額
+	 */
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+	/**
+	 * 金額を取得する。
+	 * @return　金額
+	 */
+	public int getPrice() {
+		return price;
+	}
+
 	/**
 	 * @return 金額に税率(10%)をかけた金額を返す。
 	 */
-	int calcTotalPrice() 
-	{
+	public int calcTotalPrice() {
 		return (int) ( price + (price * tax));
 	}
 }
@@ -38,13 +68,13 @@ public class BaseClass51 {
 		Product item = new Product();
 		
 		System.out.println("商品名を入力してください。");
-		item.name = br.readLine();
+		item.setName(br.readLine());
 		System.out.println("値段を入力してください。");
-		item.price = Integer.parseInt(br.readLine());
+		item.setPrice(Integer.parseInt(br.readLine()));
 		
 		int totalPrice = item.calcTotalPrice();
 		
-		System.out.println("商品名:" + item.name);
+		System.out.println("商品名:" + item.getName());
 		System.out.println("購入額:" + totalPrice + "円");
 	}
 }
