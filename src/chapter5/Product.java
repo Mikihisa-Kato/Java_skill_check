@@ -5,20 +5,14 @@ package chapter5;
 */
 public class Product {
 	
-	/**
-	 * String型 商品名
-	 */
+	/** 商品名 */
 	private String name;
 	
-	/**
-	 * int型 金額
-	 */
+	/** 金額 */
 	private int price;
 	
-	/**
-	 * double型 税率
-	 */
-	private double tax = 0.1;
+	/** 税率 */
+	private static final double TAX = 0.1;
 
 	/**
 	 * 商品名を設定する。
@@ -57,6 +51,6 @@ public class Product {
 	 * @return 金額(税込)
 	 */
 	public int calcTotalPrice() {
-		return (int) ( price + (price * tax));
+		return (int) ( price + (price * TAX));
 	}
 }

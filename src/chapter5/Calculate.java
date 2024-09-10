@@ -4,19 +4,14 @@ package chapter5;
  * Calcurateクラス。演算子と計算値のフィールドを持つ。
  */
 public class Calculate {
-	/**
-	 * double型 計算値
-	 */
+	
+	/** 計算値 */
 	private double x;
 	
-	/**
-	 * double型 計算値
-	 */
+	/** 計算値 */
 	private double y;
 	
-	/**
-	 * char型 演算子
-	 */
+	/** 演算子 */
 	private char operator;
 	
 	/**
