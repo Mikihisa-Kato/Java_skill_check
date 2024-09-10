@@ -4,8 +4,20 @@ package chapter5;
 * Productクラス。商品名と金額、税率をフィールドにもつ。
 */
 public class Product {
+	
+	/**
+	 * String型 商品名
+	 */
 	private String name;
+	
+	/**
+	 * int型 金額
+	 */
 	private int price;
+	
+	/**
+	 * double型 税率
+	 */
 	private double tax = 0.1;
 
 	/**

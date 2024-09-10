@@ -4,8 +4,19 @@ package chapter5;
  * Calcurateクラス。演算子と計算値のフィールドを持つ。
  */
 public class Calculate {
+	/**
+	 * double型 計算値
+	 */
 	private double x;
+	
+	/**
+	 * double型 計算値
+	 */
 	private double y;
+	
+	/**
+	 * char型 演算子
+	 */
 	private char operator;
 	
 	/**
@@ -74,7 +85,7 @@ public class Calculate {
 			if (y != 0) {
 				System.out.println("計算結果:" + (x / y));
 			} else {
-				System.out.println("エラー: 0で割ることはできません。") ;
+				System.out.println("エラー: 0で割ることはできません。");
 			}
 		} else {
 			System.out.println("エラー: 無効な演算子です。");
